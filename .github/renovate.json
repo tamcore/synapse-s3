@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "automergeType": "branch",
+  "labels": [
+    "renovate"
+  ],
+  "separateMinorPatch": true,
+  "rebaseWhen": "behind-base-branch",
+  "automerge": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["matrixdotorg/synapse"],
+      "ignoreTests": true
+    }
+  ]
+}
