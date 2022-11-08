@@ -1,2 +1,2 @@
-FROM matrixdotorg/synapse:v1.70.1
+FROM matrixdotorg/synapse:v1.71.0
 RUN pip install synapse-s3-storage-provider
