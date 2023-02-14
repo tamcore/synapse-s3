@@ -37,7 +37,7 @@ jobs:
 
       - name: Get version from Dockerfile
         run: |
-          sed -nE 's/FROM matrixdotorg\/synapse:(.*)/TAG=\1/p' Dockerfile >> $GITHUB_ENV
+          sed -nE 's/ARG SYNAPSE_VERSION=(.*)/TAG=\1/p' Dockerfile >> $GITHUB_ENV
 
       - name: Generate container metadata
         id: meta
