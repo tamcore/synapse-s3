@@ -1,5 +1,5 @@
 # renovate: datasource=github-releases depName=matrix-org/synapse
-ARG SYNAPSE_VERSION=v1.78.0
+ARG SYNAPSE_VERSION=v1.79.0
 
 FROM matrixdotorg/synapse:$SYNAPSE_VERSION
 
