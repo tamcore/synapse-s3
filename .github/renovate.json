@@ -14,7 +14,7 @@
   "automerge": true,
   "packageRules": [
     {
-      "matchPackageNames": ["matrixdotorg/synapse"],
+      "matchPackageNames": ["matrixdotorg/synapse", "matrix-org/synapse"],
       "ignoreTests": true
     }
   ]
