@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":disableDependencyDashboard",
     "regexManagers:dockerfileVersions"
   ],
@@ -14,7 +14,10 @@
   "automerge": true,
   "packageRules": [
     {
-      "matchPackageNames": ["matrixdotorg/synapse", "matrix-org/synapse"],
+      "matchPackageNames": [
+        "matrixdotorg/synapse",
+        "matrix-org/synapse"
+      ],
       "ignoreTests": true
     }
   ]
