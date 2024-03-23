@@ -1,7 +1,7 @@
-# renovate: datasource=github-releases depName=matrix-org/synapse
+# renovate: datasource=github-releases depName=element-hq/synapse
 ARG SYNAPSE_VERSION=v1.98.0
 
-FROM ghcr.io/matrix-org/synapse:$SYNAPSE_VERSION
+FROM ghcr.io/element-hq/synapse:$SYNAPSE_VERSION
 
 RUN --mount=type=cache,target=/root/.cache \
     pip install synapse-s3-storage-provider
