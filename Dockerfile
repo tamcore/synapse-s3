@@ -1,5 +1,5 @@
 # renovate: datasource=github-releases depName=element-hq/synapse
-ARG SYNAPSE_VERSION=v1.135.2
+ARG SYNAPSE_VERSION=v1.136.0
 
 FROM ghcr.io/element-hq/synapse:$SYNAPSE_VERSION
 
